@@ -1,0 +1,25 @@
+<template>
+      <lightning-card title="Related Contacts">
+        
+          <lightning-layout-item flexibility="grow">
+          <template if:true={flag}>   
+                  <div class="slds-m-around_medium"> 
+                        
+              <template for:each={contacts} for:item="contact" > 
+                   
+                      <tr key={contact.Id}>
+                         <td>
+                            <lightning-button label={contact.FirstName} value={contact.Id} onclick={handleContactSelect}></lightning-button>
+                         <!--   <lightning-layout id={contact.FirstName} onclick={handleContactSelect}> {contact.FirstName}{contact.LastName}</lightning-layout>
+                  <div class="slds-truncate" aria-label={contact.FirstName} onclick={handleContactSelect}> {contact.FirstName}{contact.LastName} </div> -->
+                         </td>
+                          </tr> 
+                      
+                   </template>
+                  </div>
+                  </template>
+          </lightning-layout-item>
+        
+      </lightning-card>
+     <!-- value from parent== {valueFromParent} -->
+  </template> 

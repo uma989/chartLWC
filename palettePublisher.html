@@ -1,0 +1,20 @@
+<template>
+    <lightning-card title="Account List">
+        <lightning-layout>
+                <lightning-combobox
+                name="accounts"
+                label="Select Account"
+                placeholder="Choose Account"
+                value={value}
+                onchange={handleChange}
+                options={accountOptions}>
+            </lightning-combobox>
+          <!--  <lightning-layout-item flexibility="auto" padding="around-small">
+                <lightning-combobox label="Color" value={color} options={accountOptions} onchange={updateaccount}></lightning-combobox>
+                <div class="slds-p-top_small">
+                    <lightning-button label="Change Color!" variant="brand" onclick={handleChangeColor}></lightning-button>
+                </div>                    
+            </lightning-layout-item> -->
+        </lightning-layout>          
+    </lightning-card>
+</template>

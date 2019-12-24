@@ -1,0 +1,10 @@
+<template>
+<lightning-card title="Details Of Contact">
+        <template for:each={condetails} for:item="condet"> 
+                  <p key={condet.Id}>First Name: {condet.FirstName}</p>
+               <p key={condet.Id}> Last Name:   {condet.LastName}</p>
+                <p key={condet.Id}> Phone Number:  {condet.Phone}</p>
+                <p key={condet.Id}> Email Id:  {condet.Email}</p>
+        </template>                      
+</lightning-card>
+</template>
